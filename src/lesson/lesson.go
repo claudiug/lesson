@@ -11,9 +11,14 @@ func main() {
 	fmt.Println(time.Now().Date())
 	s := make([]string, 3)
 	fmt.Println(s)
-	m := make(map[string] int)
+	m := make(map[string]int)
 	m["a"] = 1
 	m["b"] = 2
 	m["c"] = 3
 	fmt.Println(m["a"])
+	fmt.Println(timeNow())
+}
+
+func timeNow() int {
+	return time.Now().Day()
 }
